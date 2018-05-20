@@ -91,6 +91,7 @@ p {
     border-top-style: solid;
     border-top-color: teal;
     border-top-width: 7px;
+    z-index: 1;
 }
 #profile-pic {
     float: left;
@@ -109,6 +110,13 @@ p {
     background-color: teal;
     color: white;
 }
+.wrapper {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    width: 33.33%;
+}
 .logo {
     height: 200px;
 }
@@ -118,17 +126,23 @@ p {
     font-size: 20px;
     color: white;
     background-color: teal;
-    width: 80%;
-    padding-bottom: 5px;
+    width: 100%;
+    bottom: 50px;
+    z-index: 1;
     
 }
 
 .row {
+    
     margin: 10px 16px;
 }
 .column {
-    float: left;
-    width: 33.3%;
+    display: inline-block; 
+    width: 33.33%;
     text-align: center;
 }
-
+form {
+    display: list-item;
+    
+    
+}
